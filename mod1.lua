@@ -6,7 +6,7 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 
 	DelayedCalls:Add( "cheaterz_go_to_hell_d", 2, function()
 		local user = Steam:user(self:ip())
-		local prob_not_clean = nil
+		local prob_not_clean = 1
 		if user and user:rich_presence("is_modded") == "1" or self:is_modded() then
 			managers.chat:feed_system_message(1, self:name() .. " HAS MODS! Checking...")
 			for i, mod in ipairs(self:synced_mods()) do
@@ -29,22 +29,23 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 					"x-ray",
 					"dlc unlocker",
 					"skin unlocker",
-					"mvp"
+					"mvp",
+					"blt"
 				}
 
 				for k, pc in pairs(potential_hax) do
 					if string.find(mod_mini, pc) then
 						Slow_Peer(self:id())
 						managers.chat:feed_system_message(1, self:name() .. " has been slowmotion because of using the mod: " .. mod.name)
-						prob_not_clean = 1
+						prob_not_clean = nil
 					end
 				end
 			end
 
 			if prob_not_clean then
-				managers.chat:feed_system_message(1, self:name() .. " Move! Cheater!")
-			else
 				managers.chat:feed_system_message(1, self:name() .. " seems to be clean.")
+			else
+				managers.chat:feed_system_message(1, self:name() .. " Move! Cheater!")
 			end
 		else
 			managers.chat:feed_system_message(1, self:name() .. " doesn't seem to have mods.")
