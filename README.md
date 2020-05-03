@@ -2,11 +2,9 @@
 When the cheater comes in, it makes infinite slow motion.
 kick_on 쪽 리스트중에 해당하는 모드를 가진 유저가 들어왔을때, 무한슬로우를 걸어버리는 모드
 
-mod1.lua
-Modify the text.(mod1.lua 파일 수정하면됨)<br>
-
-<p>potential_hax = {<br>
-"pirate",<br>
+Mod List(모드리스트)
+여기있는 모드가진 유저는 전부 슬로우 걸린다고 보면됨
+<p>"pirate",<br>
 "p3d",<br>
 "hack",<br>
 "cheat",<br>
@@ -23,27 +21,6 @@ Modify the text.(mod1.lua 파일 수정하면됨)<br>
 "mvp"<br>
 }<br></p>
 
-Example
----------------------------------------------------------------------------------
-<p>potential_hax = {<br>
-"pirate",<br>
-"p3d",<br>
-"hack",<br>
-"cheat",<br>
-"unlocker",<br>
-"unlock",<br>
-"dlc",<br>
-"trainer",<br>
-"silent assassin",<br>
-"carry stacker",<br>
-"god",<br>
-"x-ray",<br>
-"dlc unlocker",<br>
-"skin unlocker",<br>
-  <b>"better bot",</b><br>
-  <b>"overkill unlocker",</b><br>
-"mvp"<br>
-}<br></p>
 
-리스트 마지막 부분("beyond cheats")에는 ,(콤마)가 없어야함
+아직 고치지못한 문제가 하나있는데, 인게임중일때는 작동하는데, 로비에서부터 들어온사람은 작동을 안함.
 
