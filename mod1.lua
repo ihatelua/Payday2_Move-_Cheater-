@@ -10,30 +10,9 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 			managers.chat:feed_system_message(1, self:name() .. " HAS MODS! Checking...")
 			for i, mod in ipairs(self:synced_mods()) do
 				local mod_mini = string.lower(mod.name)	
-				local kick_on = {}
 				local potential_hax = {}
 				local prob_not_clean = nil
 
-				kick_on = {
-					"pirate perfection",
-					"p3dhack",
-					"p3dhack free",
-					"p3dunlocker",
-					"arsium's weapons rebalance recoil",
-					"overkill mod",
-					"selective dlc unlocker",
-					"the great skin unlock",
-					"beyond cheats"
-				}
-
-				for _, v in pairs(kick_on) do
-					if mod_mini == v then
-						local identifier = "cheater_banned_" .. tostring(self:id())
-						Slow_Peer(self:id())
-						managers.chat:feed_system_message(1, self:name() .. " has been slowmotion because of using the mod: " .. mod.name)
-						return
-					end
-				end
 
 				potential_hax = {
 					"pirate",
@@ -55,15 +34,15 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 
 				for k, pc in pairs(potential_hax) do
 					if string.find(mod_mini, pc) then
-						log("found something!")
-						managers.chat:feed_system_message(1, self:name() .. " is using a mod that can be a potential cheating mod: " .. mod.name)
+						Slow_Peer(self:id())
+						managers.chat:feed_system_message(1, self:name() .. " has been slowmotion because of using the mod: " .. mod.name)
 						prob_not_clean = 1
 					end
 				end
 			end
 
 			if prob_not_clean then
-				managers.chat:feed_system_message(1, self:name() .. " has a warning... Check his mods/profile manually to be sure.")
+				managers.chat:feed_system_message(1, self:name() .. " Move! Cheater!")
 			else
 				managers.chat:feed_system_message(1, self:name() .. " seems to be clean.")
 			end
