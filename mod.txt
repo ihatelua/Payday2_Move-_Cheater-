@@ -1,0 +1,8 @@
+{
+	"name" : "Move! Cheater! [github.com/ihatelua]",
+	"description" : "When the cheater comes in, it makes infinite slow motion.",
+	"contact" : "https://github.com/ihatelua/Payday2_Move_Cheater",
+	"hooks" : [
+		{ "hook_id" : "lib/network/base/networkpeer", "script_path":"mod1.lua"}
+	]
+}
