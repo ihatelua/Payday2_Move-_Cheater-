@@ -4,10 +4,6 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 		return
 	end
 
-	if not Utils:IsInHeist() or Utils:IsInGameState() then
-		return
-	end
-
 	DelayedCalls:Add( "cheaterz_go_to_hell_d", 2, function()
 		local user = Steam:user(self:ip())
 		if user and user:rich_presence("is_modded") == "1" or self:is_modded() then
