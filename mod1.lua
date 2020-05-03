@@ -23,8 +23,7 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 					"overkill mod",
 					"selective dlc unlocker",
 					"the great skin unlock",
-					"beyond cheats",
-					"Payday 2 Korean patch"
+					"beyond cheats"
 				}
 
 				for _, v in pairs(kick_on) do
