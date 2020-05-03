@@ -4,6 +4,7 @@ kick_on 쪽 리스트중에 해당하는 모드를 가진 유저가 들어왔을
 
 mod1.lua
 Modify the text.(mod1.lua 파일 수정하면됨)<br>
+
 <p>potential_hax = {<br>
 "pirate",<br>
 "p3d",<br>
@@ -39,8 +40,8 @@ Example
 "x-ray",<br>
 "dlc unlocker",<br>
 "skin unlocker",<br>
-"silent assassin",<br>
-"carry stacker reloaded",<br>
+"better bot",<br>
+"overkill unlocker",<br>
 "mvp"<br>
 }<br></p>
 
