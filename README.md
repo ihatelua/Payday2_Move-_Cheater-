@@ -34,14 +34,14 @@ Example
 "unlock",<br>
 "dlc",<br>
 "trainer",<br>
-"silent assassin",<br><br>
+"silent assassin",<br>
 "carry stacker",<br>
 "god",<br>
 "x-ray",<br>
 "dlc unlocker",<br>
-"skin unlocker",<br><br>
-"better bot",<br>
-"overkill unlocker",<br><br>
+"skin unlocker",<br>
+  <b>"better bot",</b><br>
+  <b>"overkill unlocker",</b><br>
 "mvp"<br>
 }<br></p>
 
