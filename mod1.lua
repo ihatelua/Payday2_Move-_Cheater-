@@ -29,8 +29,7 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 					"x-ray",
 					"dlc unlocker",
 					"skin unlocker",
-					"mvp",
-					"blt"
+					"mvp"
 				}
 
 				for k, pc in pairs(potential_hax) do
