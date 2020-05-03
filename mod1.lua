@@ -6,12 +6,12 @@ Hooks:PostHook(NetworkPeer, "set_ip_verified", "cheaterz_go_to_hell_haha", funct
 
 	DelayedCalls:Add( "cheaterz_go_to_hell_d", 2, function()
 		local user = Steam:user(self:ip())
+		local prob_not_clean = nil
 		if user and user:rich_presence("is_modded") == "1" or self:is_modded() then
 			managers.chat:feed_system_message(1, self:name() .. " HAS MODS! Checking...")
 			for i, mod in ipairs(self:synced_mods()) do
 				local mod_mini = string.lower(mod.name)	
 				local potential_hax = {}
-				local prob_not_clean = nil
 
 
 				potential_hax = {
