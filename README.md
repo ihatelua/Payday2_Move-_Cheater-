@@ -1,5 +1,6 @@
 # Payday2_Move_Cheater
 When the cheater comes in, it makes infinite slow motion.
+kick_on 쪽 리스트중에 해당하는 모드를 가진 유저가 들어왔을때, 무한슬로우를 걸어버리는 모드
 
 mod1.lua
 Modify the text.(mod1.lua 파일 수정하면됨)<br>
