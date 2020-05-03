@@ -14,7 +14,7 @@ Modify the text.(mod1.lua 파일 수정하면됨)<br>
 "unlock",<br>
 "dlc",<br>
 "trainer",<br>
-"silent assassin",<br><br>
+"silent assassin",<br>
 "carry stacker",<br>
 "god",<br>
 "x-ray",<br>
